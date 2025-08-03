@@ -79,6 +79,7 @@ for symbol in tickers:
     results = cerebro.run()
     strategy = results[0]
     perf = strategy.analyzers.performance.get_analysis()
+    cerebro.plot()
 
     trades = strategy.win_count + strategy.loss_count
     win_ratio = (strategy.win_count / trades) * 100 if trades else 0
@@ -108,3 +109,4 @@ for bar in bars:
 
 plt.tight_layout()
 plt.show()
+
