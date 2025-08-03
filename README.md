@@ -1,2 +1,3 @@
 # Basic_startegy_backtesting
-This project implements a backtest engine using Backtrader to evaluate an SMA+MACD strategy across stocks like SPY, AAPL, NVDA, and others. It calculates win ratio, Sharpe ratio, capital growth, and plots annualized returns in a bar chart for strategy comparison.
+
+This project builds a complete backtesting pipeline using Python and Backtrader to evaluate a dual-indicator strategy based on SMA crossovers and MACD momentum signals. It simulates trades across multiple tickers (SPY, AAPL, NVDA, MSFT, IBM, DIS, HOOD), allocating 100% of available capital per signal. The system calculates key metrics such as win ratio, percent capital increase, Sharpe Ratio, and annualized returns for each asset. A final bar chart visualizes the annualized performance, allowing intuitive comparison across stocks. This framework serves as a robust foundation for quant strategy validation and extension into portfolio-level optimization.
